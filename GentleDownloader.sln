@@ -7,9 +7,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{12DF8769-EBA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F649FEF9-5C31-4D60-B893-550B5C024953}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GentleDownloader", "src\GentleDownloader\GentleDownloader.csproj", "{7566856E-0B75-4AF3-A50C-9FFE3B995F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GentleDownloader.Tests", "test\GentleDownloader.Tests\GentleDownloader.Tests.csproj", "{2677F6B5-190D-4F1D-8419-D73A14470D77}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7566856E-0B75-4AF3-A50C-9FFE3B995F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7566856E-0B75-4AF3-A50C-9FFE3B995F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7566856E-0B75-4AF3-A50C-9FFE3B995F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7566856E-0B75-4AF3-A50C-9FFE3B995F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2677F6B5-190D-4F1D-8419-D73A14470D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2677F6B5-190D-4F1D-8419-D73A14470D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2677F6B5-190D-4F1D-8419-D73A14470D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2677F6B5-190D-4F1D-8419-D73A14470D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7566856E-0B75-4AF3-A50C-9FFE3B995F19} = {12DF8769-EBAA-4746-98B2-7E6EDE58F93E}
+		{2677F6B5-190D-4F1D-8419-D73A14470D77} = {F649FEF9-5C31-4D60-B893-550B5C024953}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A461A51A-DE7C-434C-89A6-5D115CC117EA}
