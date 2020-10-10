@@ -8,10 +8,15 @@ namespace GentleDownloader
     public sealed class HtmlDownloader : IHtmlDownloader
     {
         public readonly HttpClient _client;
+        
+        private readonly string _userAgent =
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0";
 
         public HtmlDownloader(HttpClient client)
         {
             _client = client;
+
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd(_userAgent);
         }
 
         public async Task<HtmlInfo> DownloadStringAsync(Uri uri)
